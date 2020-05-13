@@ -1,5 +1,3 @@
-
-<div id="logo">
 *{
 	margin:0px;
 	padding:0px;
@@ -113,6 +111,8 @@ aside#left, aside#right, section{
 }
 aside#left{
 	width:240px;
+	float:left;
+	clear:right;
 }
 section{
 	width:750px;
