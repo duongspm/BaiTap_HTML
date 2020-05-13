@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+@charset "utf-8";
+/* CSS Document */
 *{
 	margin:0px;
 	padding:0px;
@@ -42,6 +44,7 @@ nav div#subnav{
 }
 
 nav ul{
+	
 	float:left;
 	list-style:none;
 	margin-left:50px;
@@ -61,6 +64,7 @@ nav ul li a{
 	/*gach chan*/
 	text-decoration: none;
 	font-weight:bold;
+	
 }
 
 nav ul li a{
@@ -122,10 +126,7 @@ aside#left{
 	float:left;
 	clear:right;
 }
-section{
-	width:750px;
-	padding:0px 8px;
-}
+
 aside#right{
 	width:200px;
 }
@@ -295,11 +296,9 @@ footer{
 	font-size:17px;
 	margin-top:5px;
 }
-section table{
-	border-style:solid;
-}
+
 h2{
-		background-color:#206AB5;
+	background-color:#206AB5;
 	border-top-left-radius:2px;/*lam tron(radius) goc tren ben trai cua duong vien*/
 	border-top-right-radius:2px;
 	text-align:center;/*chu nam giua*/
@@ -308,4 +307,55 @@ h2{
 	color:while;
 	height:25px;/*khoang cach chu voi vien o duoi*/
 	padding-top:5px;/*khoang cach chu voi vien o tren*/
+
+	border-top-right-radius:5px;
+}
+section input[type=submit]{
+	
+	background-color:#206AB5;
+	color:black;
+	padding: 10px 20px;
+	text-align: center; 
+  	display: inline-block;
+}
+section input[type=reset]{
+	background-color:#206AB5;
+	color:black;
+	padding: 10px 20px;
+	text-align: center; 
+  	display: inline-block;
+}
+section #ttdn{
+	
+	padding:20px 20px;
+}
+section #ttcn{
+	
+	padding:20px 20px;
+}
+section{
+	
+	width:1000px;
+	padding:0px 8px;
+}
+section table{
+	
+	border-collapse: collapse;
+	vertical-align: bottom;
+	height:auto;
+	margin:auto;
+	padding:20px;
+}
+legend{
+	font-size:18px;
+}
+td{
+	margin:auto;
+	padding:3px;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset]:hover {
+  background-color: #45a049;
 }
