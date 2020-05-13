@@ -29,18 +29,21 @@ header div#dv a:hover{
 nav{
 	clear:both;
 	background-color:#79B22F;
-	height:70px;
+	height:45px;
+	
 }
 
 nav div#subnav{
 	width:1200px;
 	margin:0px auto;
+	
 }
 
 nav ul{
 	float:left;
 	list-style:none;
 	margin-left:50px;
+
 }
 
 nav ul li{
@@ -53,11 +56,13 @@ nav ul li a{
 	color:#206AB5;
 	font-size:16px;
 	font-family:Arial, Helvetica, sans-serif;
-	text-decoration:none;/*gach chan*/
+	/*gach chan*/
+	text-decoration: none;
 	font-weight:bold;
 }
 
 nav ul li a{
+	
 	border-bottom:5px solid #206ab5;
 }
 nav div#subnav>div{
@@ -74,6 +79,7 @@ nav div#subnav>div{
 
 nav div#subnav>div input[type=text]
 {
+	text-decoration: none;
 	float:left;
 	height:29px;
 	width:250px;
