@@ -3,48 +3,114 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Đăng ký - Camper</title>
+<link rel="stylesheet" type="text/css" href="script/dangky.css">
 </head>
 
-<body>
-<form action="#" name="dangky" method="post">
-<table width="500" border="1" align="center">
-<tr><th colspan="2">ĐĂNG KÝ THÀNH VIÊN
+<body >
+
+	<header>
+    <div id="logo">
+        
+        <img src="img/LOGO.jpg"/>
+      
+    </div>
+    
+    <div id="dn">
+    	<a href="dangnhap.html"><img src="img/dangnhap.jpg"/>Đăng nhập</a> | <a href="dangky.html">Đăng ký</a>
+        <a href="#"><img src="img/Giohang.gif"/> Giỏ hàng</a>
+    </div>
+	</header>
+    
+    <nav>
+    <div id="subnav">
+    	<ul>
+    	<li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+        <li><a href="#">LIÊN HỆ</a></li>
+    </ul>
+    
+    <div>
+    	<input type="text" size="36" name="tsearch" placeholder="Nhập tên sách cần tìm..."/>
+        <input type="submit" value="Tìm sách" title="Tìm sách"/>
+    </div>
+    </div>
+    </nav>
+    
+    <div>
+    	<article>
+        	<aside id="left">
+            <div>
+            		<p>SÁCH THEO CHỦ ĐỀ</p>
+	<ul type="square">
+		<li><a href="#">Ngoại Ngữ</a></li>
+		<li><a href="#">Công nghệ thông tin</a></li>
+		<li><a href="#">Luật</a></li>
+		<li><a href="#">Văn học</a></li>
+		<li><a href="#">Kỹ thuật khoa học</a></li>
+		<li><a href="#">Nông nghiệp</a></li>
+		<li><a href="#">Lịch sử, Địa lý</a></li>
+		<li><a href="#">Kinh tế</a></li>
+	</ul>
+    </div>
+    <div>
+	<p>SÁCH THEO NHÀ XUẤT BẢN</p>
+	<ul type="square">
+		<li><a href="#">Nhà xuất bản trẻ</a></li>
+		<li><a href="#">NXB Thống Kê</a></li>
+		<li><a href="#">Kim đồng</a></li>
+		<li><a href="#">Đại học Quốc gia</a></li>
+		<li><a href="#">Văn hóa nghệ thuật</a></li>
+		<li><a href="#">Nông nghiệp</a></li>
+		<li><a href="#">Văn hóa</a></li>
+		<li><a href="#">Lao động - Xã hội</a></li>
+	</ul>
+    </div>
+    </aside>
+     <section>
+    <form action="#" name="dangky" method="post">
+
+<h2>ĐĂNG KÝ THÀNH VIÊN</h2>
 <fieldset>
-	<table align="center" width="500" border="1">
-	<legend align="left"><b>Thông tin cá nhân</b></legend>
-    <tr><td>Họ và tên:</td><td align="center"><input type="text" /></td></tr>
-    <tr><td>Ngày sinh:<td align="left"><select name="Ngay">
+	<legend><b>Thông tin cá nhân</b></legend>
+    <table width="500" cellpadding="0">
+    <tr>
+    	<td>Họ và tên:</td>
+        <td><input type="text" /></td>
+    </tr>
+    <tr>
+    	<td>Ngày sinh:</td>
+        <td><select name="Ngay">
     <option value="01" selected="selected">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
-     <option value="04">04</option>
-     <option value="05">05</option>
-      <option value="06">06</option>
-      <option value="07">07</option>
-       <option value="08">08</option>
-       <option value="09">09</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-         <option value="12">12</option>
-         <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-           <option value="16">16</option>
-           <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-             <option value="20">20</option>
-             <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-               <option value="24">24</option>
-               <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                 <option value="28">28</option>
-                 <option value="29">29</option>
-                  <option value="30">30</option>
-                  <option value="31">31</option></select>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">09</option>
+    <option value="10">10</option>
+	<option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option></select>
       Tháng<select name="Thang">
        <option value="01">01</option>
        <option value="02">02</option>
@@ -57,14 +123,14 @@
            <option value="09">09</option>
            <option value="10">10</option>
             <option value="10">10</option>
-            <option value="12">12</option></select>
-      Năm<input type="number" />
-      </td>
-      </td></tr>
-      <tr><td>Giới tính:<td align="center"><input type="radio" name="radGioiTinh" value="Nam" checked="checked" /> Nam<input type="radio" name="radGioiTinh" value="Nữ" /> Nữ</td></td></tr>
+            <option value="12">12</option></select>Năm<input type="number" /></td>
+      </tr>
+      <tr>
+      	<td>Giới tính:<td><input type="radio" name="radGioiTinh" value="Nam" checked="checked" /> Nam<input type="radio" name="radGioiTinh" value="Nữ" /> Nữ</td></td></tr>
       <tr><td>Địa chỉ:<td align="center"><textarea></textarea></td></td></tr>
       <tr><td>Điện thoại:<td align="center"><input type="tel" /></td></td></tr>
-      <tr><td>Email:<td align="center"><input type="email" required="required" /></td></td></tr></fieldset>
+      <tr><td>Email:<td align="center"><input type="email" required="required" /></td></td></tr>
+      </fieldset>
       
       
       <fieldset>
@@ -79,8 +145,43 @@
       <input type="reset" value="Hủy" />
       </th></tr>
 </table>
+</fieldset>
 
-</form>
-     
+    </form>
+</section>
+    
+    <aside id="right">
+    <div id="sachbannhieu">
+    	<p><b>SÁCH BÁN NHIỀU</b></p>
+<marquee direction="up" scrollamount="3" scrolldelay="100" onMouseMove="stop()" onMouseOut="start()">
+    	<p><a href="#"><img src="img/sach/KT0009.jpg">Thủ Thuật Lập Trình Visual Basic 6</a></p>
+        <p><a href="#"><img src="img/sach/TH005.jpg">Hướng Dẫn Tự Học Photoishop CS (Photoshop 6.0)</a></p>
+        <p><a href="#"><img src="img/sach/TH002.jpg">Căn Bản Về Photoshop CS Tinh Chỉnh Và Xử Lý Màu</a></p>
+        <p><a href="#"><img src="img/sach/THCB.jpg">Tin Học Cơ Bản</a></p>
+        </marquee></div>
+        <div id="lienketwebsite">
+         <p><b>LIÊN KẾT WEBSITE</b></p>
+        <select onChange="window.open(this.options[this.selectedIndex].value,'_bank')">
+       
+        <option selected>---Chọn trang liên kết---</option>
+        <option value="http://www.tdmu.edu.vn">Đại Học Thủ Dầu Một</option>
+        <option value="http://www.itee.tdmu.edu.vn">Khoa KT-CN</option>
+        </select></div>
+        <div id="thongketruycap">
+        <p><b>THỐNG KÊ TRUY CẬP</b></p>
+        <p><b>Tổng truy cập:1.145.232/s</b></p>
+        <p><b>Đang online:2.235</b></p>
+        </div>
+        </aside>
+        
+     </article>
+    </div>
+    
+    <footer >
+    	<p>@2016 - Nhà sách ABC. allright reserved</p>
+        <p>Website được phát triển để sử dụng làm bài tập thực hành môn thiết kế và lập trình web</p>
+        <p>Email: abc.thudaumotuniversity@gmail.com</p>
+    </footer>
+    
 </body>
 </html>
