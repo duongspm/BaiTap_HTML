@@ -4,6 +4,93 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Đăng ký - Camper</title>
 <link rel="stylesheet" type="text/css" href="script/dangky.css">
+<script language="javascript">
+	function KiemTraThongTin()
+	{
+		/*Kiểm tra họ tên*/
+		var hoTen=document.getElementById("hoten");
+		if(hoTen.value=="")
+		{
+			alert("Vui lòng nhập Họ tên của bạn.");
+			hoTen.focus();
+			return false;
+		}
+		
+		/*Kiểm tra năm sinh*/
+		var nam=document.getElementById("nam");
+		if(nam.value=="")
+		{
+			alert("Hãy điền năm sinh của bạn");
+			nam.focus();
+			return false;
+		}
+		if(isNaN(nam.value)==true)
+		{
+			alert("Năm sinh phải là số có 4 số.");
+			nam.value="";
+			nam.focus();
+			return false;
+		}
+		
+		/*Kiểm tra email*/
+		var email=document.getElementById("email");
+		re=/\w+@\w+\.\w+/;/*?????*/
+		if(email.value=="")
+		{
+			alert("Bạn chưa nhập Email kìa.");
+			email.focus();
+			return false;
+		}
+		else
+		{
+			if(re.test(email.value)==false)
+			{
+				alert("Email không đúng định dạng.");
+				email.focus();
+				return false;
+			}
+		}
+		
+		/*Kiểm tra tên đăng nhập*/
+		var tendangnhap=document.getElementById("tendangnhap");
+		if(tendangnhap.value=="")
+		{
+			alert("Vui lòng nhập tên đăng nhập của bạn.");
+			tendangnhap.focus();
+			return false;
+		}
+		
+		/*Kiểm tra mặt khẩu*/
+		var matkhau=document.getElementById("matkhau");
+		if(matkhau.value=="")
+		{
+			alert("Vui lòng nhập mặt khẩu của bạn. Mặt khẩu rất quan trọng bạn phải nhớ mặt khẩu nha");
+			matkhau.focus();
+			return false;
+		}
+		
+		/*Kiểm tra nhập lại mặt khẩu*/
+		var nhaplaimatkhau=document.getElementById("nhaplaimatkhau");
+		if(nhaplaimatkhau.value=="")
+		{
+			alert("Vui lòng xác nhận mặt khẩu.");
+			nhaplaimatkhau.focus();
+			return false;
+		}
+		if(nhaplaimatkhau!=matkhau)
+		{
+			alert("Mặt khẩu vừa nhập không khớp với cái ở trên. Vui lòng nhập lại mặt khẩu.");
+			nhaplaimatkhau.focus();
+			return false;
+		}
+		else
+			return true;
+			
+		/*Thông báo khi thông tin hợp lệ*/
+		alert("Đăng ký thành công! Xin chúc mừng.");
+		return true;
+	}
+</script>
 </head>
 
 <body >
@@ -75,7 +162,7 @@
     <table width="749" height="155" cellpadding="0">
     <tr>
     	<td width="99">Họ và tên:</td>
-        <td width="562"><input type="text" /></td>
+        <td width="562"><input id="hoten" name="txtHoTen" type="text" /></td>
     </tr>
     <tr>
     <td>Ngày sinh:</td>
@@ -124,7 +211,7 @@
         <option value="10">10</option>
         <option value="10">10</option>
         <option value="12">12</option></select> Năm 
-        <input type="number" /></td>
+        <input id="nam" type="text" name="txtNam" style="width:35px;"/></td>
         </tr>
         <tr>
         	<td>Giới tính:</td>
@@ -132,7 +219,7 @@
             	<input type="radio" name="radGioiTinh" value="Nữ" /> Nữ</td>
         </tr>
         <tr>
-        	<td height="60">Địa chỉ:</td>
+        	<td>Địa chỉ:</td>
             <td><textarea></textarea></td>
         </tr>
         <tr>
@@ -140,8 +227,8 @@
             <td><input type="tel" /></td>
         </tr>
         <tr>
-        	<td height="31">Email:</td>
-            <td><input type="email" required="required" /></td>
+        	<td>Email:</td>
+            <td><input name="email" name="txtEmail" type="email" required="required" /></td>
         </tr>
         </table>
         
@@ -149,35 +236,36 @@
         
 	<fieldset>
 	<legend id="ttdn" ><b>Thông tin đăng nhập</b>    </legend>
-	<table width="749" height="155" cellpadding="0">
+	<table width="750" height="155" cellpadding="0" style="margin-top: 9px;margin-bottom: 9px;">
 	  <tr>
         	<td width="158">Tên đăng nhập:</td>
-            <td width="583"><input type="text" required="required" /></td>
+            <td><input name="tendangnhap" name="txtTenDangNhap" type="text"/></td>
         </tr>
         <tr>
         	<td>Mặt khẩu:</td>
-            <td><input type="password" required="required" /></td>
+            <td><input name="matkhau" name="txtMatKhau" type="password"  /></td>
         </tr>
         <tr>
-        	<td height="31">Nhập lại mặt khẩu:</td>
-            <td><input type="password" required="required" /></td>
+        	<td>Nhập lại mặt khẩu:</td>
+            <td><input name="nhaplaimatkhau" name="txtNhapLaiMatKhau" type="password"  /></td>
         </tr>
       </table>
         </fieldset>
-        <input type="submit" name="dangnhap" value="ĐĂNG NHẬP"/>
-        <input type="reset" name="huy" value="HỦY" />
+       <input type="submit" name="dangnhap" value="ĐĂNG NHẬP" onclick="return KiemTraThongTin()"/>
+       <input type="reset" name="huy" value="HỦY" />
     </form>
 </section>
     
     <aside id="right">
     <div id="sachbannhieu">
     	<p><b>SÁCH BÁN NHIỀU</b></p>
-<marquee direction="up" scrollamount="3" scrolldelay="100" onMouseMove="stop()" onMouseOut="start()">
+		<marquee direction="up" scrollamount="3" scrolldelay="100" onMouseMove="stop()" onMouseOut="start()">
     	<p><a href="#"><img src="img/sach/KT0009.jpg">Thủ Thuật Lập Trình Visual Basic 6</a></p>
         <p><a href="#"><img src="img/sach/TH005.jpg">Hướng Dẫn Tự Học Photoishop CS (Photoshop 6.0)</a></p>
         <p><a href="#"><img src="img/sach/TH002.jpg">Căn Bản Về Photoshop CS Tinh Chỉnh Và Xử Lý Màu</a></p>
         <p><a href="#"><img src="img/sach/THCB.jpg">Tin Học Cơ Bản</a></p>
-        </marquee></div>
+        </marquee>
+    </div>
         <div id="lienketwebsite">
          <p><b>LIÊN KẾT WEBSITE</b></p>
         <select onChange="window.open(this.options[this.selectedIndex].value,'_bank')">

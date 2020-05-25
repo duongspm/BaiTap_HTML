@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Time - Camper</title>
+<script language="javascript">
+	d = new Date();
+	thu = d.getDate()
+	ngay = d.getDate();
+	ngay = ((ngay < 10) ? '0' :'') + ngay;
+	thang = d.getMonth() + 1;
+	thang = ((thang < 10) ? '0' : '') + thang;
+	nam = 1990 + d.getYear();
+	gio = d.getHours();
+	gio = ((gioi < 10) ? '0' : '') + gioi;
+	phut = d.getMinutes();
+	phut = ((phut < 10) ? '0' : '') + phut;
+	giay = d.getSeconds();
+	if(giay<10) giay='0'+giay;
+	if(thu==0) thu="Chủ nhật";
+	if(thu==1) thu="Thứ hai";
+	if(thu==2) thu="Thứ ba";
+	if(thu==3) thu="Thứ tư";
+	if(thu==4) thu="Thứ năm";
+	if(thu==5) thu="Thứ sáu";
+	if(thu==6) thu="Thứ bảy";
+</script>
+</head>
+
+<body>
+<script language="javascript">
+	document.write("<b>"+"Bây giờ là: "+gio+":"+phut+":"+giay+"<b>");
+	document.write("<font color = blue>Hôm nay là: "+thu+", ngày "+ngay+" tháng " +thang+" năm "+nam+"</font></b>");
+</script>
+</body>
+</html>
