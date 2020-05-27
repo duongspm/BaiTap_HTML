@@ -13,6 +13,7 @@ div#logo{
 
 div#dn{
 	float:right;
+	padding-top: 60px;
 }
 
 div#dn a{
@@ -59,12 +60,13 @@ nav ul li a{
 	/*gach chan*/
 	text-decoration: none;
 	font-weight:bold;
+	
 }
 
-nav ul li a{
+/* nav ul li a{
 	
 	border-bottom:5px solid #206ab5;
-}
+} */
 nav div#subnav>div{
 	float:right;
 	background-color:while;
@@ -192,7 +194,7 @@ aside#right>div#sachbannhieu img{
 	height:50px;
 	padding-left:5px;/*Khong gian xung quanh nd , ben trong duong vien*/
 	float:left;
-	margin-bttom:5px;/*khong gian xung quanh nd, ben ngoai duong vien*/
+	margin-bottom:5px;/*khong gian xung quanh nd, ben ngoai duong vien*/
 }
 aside#right>div#sachbannhieu a{
 	text-decoration:none;
@@ -293,9 +295,10 @@ footer{
 	font-size:17px;
 	margin-top:5px;
 }
+
 .calendar{
 	border:1px solid #206AB5;
-	border-radius:4ps;
+	border-radius:4px;
 	margin-bottom:10px;
 }
 .calendar table{
@@ -319,3 +322,56 @@ footer{
 	text-align:center;
 	border:1px solid #666;
 }
+aside#slide{
+	margin-left:100px;
+	width:89%;
+}
+.slide-pager{
+	position:relative;
+}
+.slide-control-prev{
+	position:absolute;
+	text-align:center;
+	width:25px;
+	height:60px;
+	background:#F90;
+	line-height:60px;
+	color:#FFF;
+	cursor:pointer;
+	top:102px;
+	left:-34px;
+	z-index:1000;
+}
+.slide-control-next{
+	position:absolute;
+	text-align:center;
+	width:25px;
+	height:60px;
+	background:#F90;
+	line-height:60px;
+	color:#FFF;
+	cursor:pointer;
+	top:102px;
+	left:-34px;
+	z-index:1000;
+}
+.slide-container{
+	height:255px;
+	width:92%;
+	overflow:hidden;
+	position:relative;
+}
+.slide-stage{
+	position:absolute;
+}
+.slide-image{
+	float:left;
+	width:200px;
+	text-align:center;
+}
+.slide-image img{
+	width:170px;
+	height:250px;
+	margin:0 auto;
+}
+	

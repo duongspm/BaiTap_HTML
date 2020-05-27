@@ -2,8 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Đăng ký - Camper</title>
+<title>Đăng ký</title>
 <link rel="stylesheet" type="text/css" href="script/dangky.css">
+<script type="text/javascript" src="JavaScript/JS/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="JavaScript/JS/Slider.js"></script>
 <script language="javascript">
 	function KiemTraThongTin()
 	{
@@ -33,7 +35,7 @@
 		}
 		
 		/*Kiểm tra email*/
-		var email=document.getElementById("email");
+		var email=window.document.dangky.txtEmail;
 		re=/\w+@\w+\.\w+/;/*?????*/
 		if(email.value=="")
 		{
@@ -152,6 +154,107 @@
 		<li><a href="#">Lao động - Xã hội</a></li>
 	</ul>
     </div>
+    <div class="calendar">
+        <div class="calendar">
+            <script language="javascript">
+            /*<!--Begin*/
+            monthnames = new Array("January","Februrary","March","April","May","June","July","August","September","October","November","Decemeber");
+            var linkcount=0;
+            function addlink(mont,day,href)
+            {
+                var entry=new Array(3);
+                entry[0]=month;
+                entry[1]=day;
+                entry[2]=href;
+                this[linkcount++]=entry;
+            }
+            Array.prototype.addlink=addlink;
+            linkdays=new Array();
+            monthdays[0]=31;
+            monthdays[1]=28;
+            monthdays[2]=31;
+            monthdays[3]=30;
+            monthdays[4]=31;
+            monthdays[5]=30;
+            monthdays[6]=31;
+            monthdays[7]=31;
+            monthdays[8]=30;
+            monthdays[9]=31;
+            monthdays[10]=30;
+            monthdays[11]=31;
+            todayDate=new Date();
+            thisday=todayDate.getDay();
+            thismonth=todayDate.getMonth();
+            thisdate=todayDate.getDate();
+            thisyear=todayDate.getYear();
+            thisyear=todayDate%100;
+            thisyear=((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+            if(((thisyear % 4 == 0) && !(thisyear % 100 == 0))||(thisyear % 400 == 0)) monthdays[1] ++;
+            startspaces=thisdate;
+            while (startspaces > 7) startpaces -= 7;
+            startspaces = thisday - startspaces + 1;
+            if (startpaces < 0) startspaces += 7;
+            document.write("<table>"); 
+            document.write("<tr><td colspan=7 class='monthyear'>"+monthnames[thismonth]+" "+thisyear+"</td></tr>");
+            document.write("<tr class='weektitle'>");
+            document.write("<td align=center>Sun</td>");
+            document.write("<td align=center>Mon</td>");
+            document.write("<td align=center>Tus</td>");
+            document.write("<td align=center>Wed</td>");
+            document.write("<td align=center>Thu</td>");
+            document.write("<td align=center>Fri</td>");
+            document.write("<td align=center>Sat</td>");
+            document.write("</tr>");
+            document.write("<tr>");
+            for(s=0;s<startspaces;s++)
+            {
+                document.write("<td> </td>");
+            }
+            count = 1;
+            while(count <= monthdays[thismonth])
+            {
+                for(b = startspaces;b<7;b++)
+                {
+                    linktrue=false;
+                    document.write("<td class='weekday'>");
+                    for(c=0;c<linkdays.length;c++)
+                    {
+                        if (linkdays[c]!=null)
+                        {
+                            if((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count))
+                            {
+                                document.write("<a href\""+linkdays[c][2]+"\">");
+                                linktrue=true;
+                            }
+                        }
+                    }
+                    if(count==thisdate)
+                    {
+                        document.write("<font color='FF0000'><strong>");
+                    }
+                    if(count<=monthdays[thismonth])
+                    {
+                        document.write(count);
+                    }
+                    else{
+                        document.write(" ");
+                    }
+                    if(count==thisdate)
+                    {
+                        document.write("</strong></font>");
+                    }
+                    if(linktrue)
+                    document.write("</a>");
+                    document.write("</td>");
+                    count++;
+                }
+                document.write("</tr>");
+                document.write("</tr>");
+                startspaces=0;
+            }
+            document.write("</table>");
+        </script>
+    </div>
     </aside>
     
     <section>
@@ -211,7 +314,7 @@
         <option value="10">10</option>
         <option value="10">10</option>
         <option value="12">12</option></select> Năm 
-        <input id="nam" type="text" name="txtNam" style="width:35px;"/></td>
+        <input id="nam" type="number" name="txtNam" style="width:50px;" maxlength="4"/></td>
         </tr>
         <tr>
         	<td>Giới tính:</td>
@@ -228,7 +331,7 @@
         </tr>
         <tr>
         	<td>Email:</td>
-            <td><input name="email" name="txtEmail" type="email" required="required" /></td>
+            <td><input id="email" name="email" name="txtEmail" type="email" required="required" /></td>
         </tr>
         </table>
         
@@ -239,15 +342,15 @@
 	<table width="750" height="155" cellpadding="0" style="margin-top: 9px;margin-bottom: 9px;">
 	  <tr>
         	<td width="158">Tên đăng nhập:</td>
-            <td><input name="tendangnhap" name="txtTenDangNhap" type="text"/></td>
+            <td><input name="tendangnhap" name="txtTenDangNhap" type="text" required="required"/></td>
         </tr>
         <tr>
         	<td>Mặt khẩu:</td>
-            <td><input name="matkhau" name="txtMatKhau" type="password"  /></td>
+            <td><input name="matkhau" name="txtMatKhau" type="password" required="required" /></td>
         </tr>
         <tr>
         	<td>Nhập lại mặt khẩu:</td>
-            <td><input name="nhaplaimatkhau" name="txtNhapLaiMatKhau" type="password"  /></td>
+            <td><input name="nhaplaimatkhau" name="txtNhapLaiMatKhau" type="password" required="required"  /></td>
         </tr>
       </table>
         </fieldset>

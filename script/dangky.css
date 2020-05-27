@@ -17,6 +17,7 @@ div#logo{
 
 div#dn{
 	float:right;
+	padding-top: 60px;
 }
 
 div#dn a{
@@ -67,10 +68,10 @@ nav ul li a{
 	
 }
 
-nav ul li a{
+/* nav ul li a{
 	
 	border-bottom:5px solid #206ab5;
-}
+} */
 nav div#subnav>div{
 	float:right;
 	background-color:while;
@@ -195,7 +196,7 @@ aside#right>div#sachbannhieu img{
 	height:50px;
 	padding-left:5px;/*Khong gian xung quanh nd , ben trong duong vien*/
 	float:left;
-	margin-bttom:5px;/*khong gian xung quanh nd, ben ngoai duong vien*/
+	margin-bottom:5px;/*khong gian xung quanh nd, ben ngoai duong vien*/
 }
 aside#right>div#sachbannhieu a{
 	text-decoration:none;
@@ -358,4 +359,30 @@ input[type=submit]:hover {
 }
 input[type=reset]:hover {
   background-color: #45a049;
+}
+.calendar{
+	border:1px solid #206AB5;
+	border-radius:4px;
+	margin-bottom:10px;
+}
+.calendar table{
+	width:100%;
+}
+.calendar table tr td.monthyear{
+	background-color:#F60;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFF;
+	border:1px solid #666;
+}
+.calendar table tr.weektitle td{
+	text-align:center;
+	font-weight:bold;
+	border:1px solid #666;
+	background-color:#CCF;
+}
+.calerdar table tr td.weekday{
+	text-align:center;
+	border:1px solid #666;
 }
