@@ -168,8 +168,9 @@
                 entry[2]=href;
                 this[linkcount++]=entry;
             }
-            Array.prototype.addlink=addlink;
+            Array.prototype.addlink = addlink;
             linkdays=new Array();
+			monthdays=new Array(12);
             monthdays[0]=31;
             monthdays[1]=28;
             monthdays[2]=31;
@@ -354,8 +355,10 @@
         </tr>
       </table>
         </fieldset>
-       <input type="submit" name="dangnhap" value="ĐĂNG NHẬP" onclick="return KiemTraThongTin()"/>
-       <input type="reset" name="huy" value="HỦY" />
+       <div style="padding-left: 300px;padding-top: 20px;">
+           <input type="submit" name="dangnhap" value="ĐĂNG KÝ" onclick="return KiemTraThongTin()"/>
+           <input type="reset" name="huy" value="HỦY" />
+       </div>
     </form>
 </section>
     
