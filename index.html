@@ -96,33 +96,29 @@
 </head>
 
 <body >
-
 	<header>
-    <div id="logo">
-        
-        <img src="img/LOGO.jpg"/>
-      
-    </div>
-    
-    <div id="dn">
-    	<a href="dangnhap.html"><img src="img/dangnhap.jpg"/>Đăng nhập</a> | <a href="dangky.html">Đăng ký</a>
-        <a href="#"><img src="img/Giohang.gif"/> Giỏ hàng</a>
-    </div>
+		<div id="logo">
+			<img src="img/LOGO.jpg"/>
+		</div>
+		
+		<div id="dn">
+			<a href="dangnhap.html"><img src="img/dangnhap.jpg"/>Đăng nhập</a> | <a href="dangky.html">Đăng ký</a>
+			<a href="#"><img src="img/Giohang.gif"/> Giỏ hàng</a>
+		</div>
 	</header>
     
     <nav>
-    <div id="subnav">
-    	<ul>
-    	<li><a href="index.html">TRANG CHỦ</a></li>
-        <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
-        <li><a href="#">LIÊN HỆ</a></li>
-    </ul>
-    
-    <div>
-    	<input type="text" size="36" name="tsearch" placeholder="Nhập tên sách cần tìm..."/>
-        <input type="submit" value="Tìm sách" title="Tìm sách"/>
-    </div>
-    </div>
+    	<div id="subnav">
+			<ul>
+				<li><a href="index.html">TRANG CHỦ</a></li>
+				<li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+				<li><a href="#">LIÊN HỆ</a></li>
+			</ul>
+			<div>
+				<input type="text" size="36" name="tsearch" placeholder="Nhập tên sách cần tìm..."/>
+				<input type="submit" value="Tìm sách" title="Tìm sách"/>
+			</div>
+		</div>
     </nav>
     <aside id="slide">
 		<div class="slide-pager">
@@ -140,209 +136,204 @@
                 <div class="slide-image"><a href="#"><img src="img/Sach/KT0007.jpg"></a></div>
                 <div class="slide-image"><a href="#"><img src="img/Sach/KT0008.jpg"></a></div>
                 <div class="slide-image"><a href="#"><img src="img/Sach/KT0009.jpg"></a></div>
-                
 			</div>
 		</div>
 	</aside>
     <div>
     	<article>
         	<aside id="left">
-            <div>
-            		<p>SÁCH THEO CHỦ ĐỀ</p>
-	<ul type="square">
-		<li><a href="#">Ngoại Ngữ</a></li>
-		<li><a href="#">Công nghệ thông tin</a></li>
-		<li><a href="#">Luật</a></li>
-		<li><a href="#">Văn học</a></li>
-		<li><a href="#">Kỹ thuật khoa học</a></li>
-		<li><a href="#">Nông nghiệp</a></li>
-		<li><a href="#">Lịch sử, Địa lý</a></li>
-		<li><a href="#">Kinh tế</a></li>
-	</ul>
-    </div>
-    <div>
-	<p>SÁCH THEO NHÀ XUẤT BẢN</p>
-	<ul type="square">
-		<li><a href="#">Nhà xuất bản trẻ</a></li>
-		<li><a href="#">NXB Thống Kê</a></li>
-		<li><a href="#">Kim đồng</a></li>
-		<li><a href="#">Đại học Quốc gia</a></li>
-		<li><a href="#">Văn hóa nghệ thuật</a></li>
-		<li><a href="#">Nông nghiệp</a></li>
-		<li><a href="#">Văn hóa</a></li>
-		<li><a href="#">Lao động - Xã hội</a></li>
-	</ul>
-    </div>
+				<div>
+					<p>SÁCH THEO CHỦ ĐỀ</p>
+					<ul type="square">
+						<li><a href="#">Ngoại Ngữ</a></li>
+						<li><a href="#">Công nghệ thông tin</a></li>
+						<li><a href="#">Luật</a></li>
+						<li><a href="#">Văn học</a></li>
+						<li><a href="#">Kỹ thuật khoa học</a></li>
+						<li><a href="#">Nông nghiệp</a></li>
+						<li><a href="#">Lịch sử, Địa lý</a></li>
+						<li><a href="#">Kinh tế</a></li>
+					</ul>
+				</div>
+				<div>
+					<p>SÁCH THEO NHÀ XUẤT BẢN</p>
+					<ul type="square">
+						<li><a href="#">Nhà xuất bản trẻ</a></li>
+						<li><a href="#">NXB Thống Kê</a></li>
+						<li><a href="#">Kim đồng</a></li>
+						<li><a href="#">Đại học Quốc gia</a></li>
+						<li><a href="#">Văn hóa nghệ thuật</a></li>
+						<li><a href="#">Nông nghiệp</a></li>
+						<li><a href="#">Văn hóa</a></li>
+						<li><a href="#">Lao động - Xã hội</a></li>
+					</ul>
+				</div>
     
-    <div class="calendar">
-    	<script LANGUAGE="JavasSript">
-			monthnames = new Array("January","Februrary","March","April","May","June","July","August","September","October","November","Decemeber");
-			var linkcount = 0;
-			function addlink(mont,day,href)
-			{
-				var entry = new Array(3);
-				entry[0] = month;
-				entry[1] = day;
-				entry[2] = href;
-				this[linkcount++] = entry;
-			}
-			Array.prototype.addlink = addlink;
-			linkdays = new Array();
-			monthdays = new Array(12);
-			monthdays[0]=31;
-			monthdays[1]=28;
-			monthdays[2]=31;
-			monthdays[3]=30;
-			monthdays[4]=31;
-			monthdays[5]=30;
-			monthdays[6]=31;
-			monthdays[7]=31;
-			monthdays[8]=30;
-			monthdays[9]=31;
-			monthdays[10]=30;
-			monthdays[11]=31;
-			todayDate=new Date();
-			thisday=todayDate.getDay();
-			thismonth=todayDate.getMonth();
-			thisdate=todayDate.getDate();
-			thisyear=todayDate.getYear();
-			thisyear=todayDate%100;
-			thisyear=((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
-			if(((thisyear % 4 == 0) && !(thisyear % 100 == 0))||(thisyear % 400 == 0)) monthdays[1] ++;
-			startspaces=thisdate;
-			while (startspaces > 7) startpaces -= 7;
-			startspaces = thisday - startspaces + 1;
-			if (startpaces < 0) startspaces += 7;
-			document.write("<table>"); 
-			document.write("<tr><td colspan=7 class='monthyear'>"+monthnames[thismonth]+" "+thisyear+"</td></tr>");
-			document.write("<tr class='weektitle'>");
-			document.write("<td align=center>Sun</td>");
-			document.write("<td align=center>Mon</td>");
-			document.write("<td align=center>Tus</td>");
-			document.write("<td align=center>Wed</td>");
-			document.write("<td align=center>Thu</td>");
-			document.write("<td align=center>Fri</td>");
-			document.write("<td align=center>Sat</td>");
-			document.write("</tr>");
-			document.write("<tr>");
-			for(s=0;s<startspaces;s++)
-			{
-				document.write("<td> </td>");
-			}
-			count = 1;
-			while(count <= monthdays[thismonth])
-			{
-				for(b = startspaces;b<7;b++)
-				{
-					linktrue=false;
-					document.write("<td class='weekday'>");
-					for(c=0;c<linkdays.length;c++)
-					{
-						if (linkdays[c]!=null)
+				<div class="calendar">
+					<script LANGUAGE="JavasSript">
+						monthnames = new Array("January","Februrary","March","April","May","June","July","August","September","October","November","Decemeber");
+						var linkcount = 0;
+						function addlink(mont,day,href)
 						{
-							if((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count))
-							{
-								document.write("<a href\""+linkdays[c][2]+"\">");
-								linktrue=true;
-							}
+							var entry = new Array(3);
+							entry[0] = month;
+							entry[1] = day;
+							entry[2] = href;
+							this[linkcount++] = entry;
 						}
-					}
-					if(count==thisdate)
-					{
-						document.write("<font color='FF0000'><strong>");
-					}
-					if(count<=monthdays[thismonth])
-					{
-						document.write(count);
-					}
-					else{
-						document.write(" ");
-					}
-					if(count==thisdate)
-					{
-						document.write("</strong></font>");
-					}
-					if(linktrue)
-					document.write("</a>");
-					document.write("</td>");
-					count++;
-				}
-				document.write("</tr>");
-				document.write("<tr>");
-				startspaces=0;
-			}
-			document.write("</table>");
-		</script>
-    </div>
-    </aside>
+						Array.prototype.addlink = addlink;
+						linkdays = new Array();
+						monthdays = new Array(12);
+						monthdays[0]=31;
+						monthdays[1]=28;
+						monthdays[2]=31;
+						monthdays[3]=30;
+						monthdays[4]=31;
+						monthdays[5]=30;
+						monthdays[6]=31;
+						monthdays[7]=31;
+						monthdays[8]=30;
+						monthdays[9]=31;
+						monthdays[10]=30;
+						monthdays[11]=31;
+						todayDate=new Date();
+						thisday=todayDate.getDay();
+						thismonth=todayDate.getMonth();
+						thisdate=todayDate.getDate();
+						thisyear=todayDate.getYear();
+						thisyear=todayDate%100;
+						thisyear=((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+						if(((thisyear % 4 == 0) && !(thisyear % 100 == 0))||(thisyear % 400 == 0)) monthdays[1] ++;
+						startspaces=thisdate;
+						while (startspaces > 7) startpaces -= 7;
+						startspaces = thisday - startspaces + 1;
+						if (startpaces < 0) startspaces += 7;
+						document.write("<table>"); 
+						document.write("<tr><td colspan=7 class='monthyear'>"+monthnames[thismonth]+" "+thisyear+"</td></tr>");
+						document.write("<tr class='weektitle'>");
+						document.write("<td align=center>Sun</td>");
+						document.write("<td align=center>Mon</td>");
+						document.write("<td align=center>Tus</td>");
+						document.write("<td align=center>Wed</td>");
+						document.write("<td align=center>Thu</td>");
+						document.write("<td align=center>Fri</td>");
+						document.write("<td align=center>Sat</td>");
+						document.write("</tr>");
+						document.write("<tr>");
+						for(s=0;s<startspaces;s++)
+						{
+							document.write("<td> </td>");
+						}
+						count = 1;
+						while(count <= monthdays[thismonth])
+						{
+							for(b = startspaces;b<7;b++)
+							{
+								linktrue=false;
+								document.write("<td class='weekday'>");
+								for(c=0;c<linkdays.length;c++)
+								{
+									if (linkdays[c]!=null)
+									{
+										if((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count))
+										{
+											document.write("<a href\""+linkdays[c][2]+"\">");
+											linktrue=true;
+										}
+									}
+								}
+								if(count==thisdate)
+								{
+									document.write("<font color='FF0000'><strong>");
+								}
+								if(count<=monthdays[thismonth])
+								{
+									document.write(count);
+								}
+								else{
+									document.write(" ");
+								}
+								if(count==thisdate)
+								{
+									document.write("</strong></font>");
+								}
+								if(linktrue)
+								document.write("</a>");
+								document.write("</td>");
+								count++;
+							}
+							document.write("</tr>");
+							document.write("<tr>");
+							startspaces=0;
+						}
+						document.write("</table>");
+					</script>
+				</div>
+    		</aside>
     
-    <section>
-    	<p>Sách mới</p>
-        <div class="sach"> 
-        	<p class="tensach"><a href="chitietsach.html">Hướng Dẫn Tự Học Photoshop CS (Photoshop 6.0)</a></p>
-            <img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/TH005.jpg">
-            <p class="dongia">Đơn giá: <span class="gia">50,000VNĐ</span></p>
-            <a href="#"><img class="nutchonmua" src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
-            </div>
-            
-            
-            <div class="sach"> 
-        	<p class="tensach"><a href="chitietsach.html">Quản Lý Dự Án</a></p>
-            <img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/KT0002.jpg">
-            <p class="dongia">Đơn giá: <span class="gia">50,000VNĐ</span></p>
-            <a href="#"><img class="nutchonmua" src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
-            </div>
-            
-            
-            <div class="sach"> 
-        	<p class="tensach"><a href="chitietsach.html">Quản Trị Mạng</a></p>
-            <img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/130499.jpg">
-            <p class="dongia">Đơn giá: <span class="gia">60,000VNĐ</span></p>
-            <a href="#"><img src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
-            </div>
-            
-            
-               <div class="sach"> 
-        	<p class="tensach"><a href="chitietsach.html">Tiền Tệ - Tài Chính</a></p>
-            <img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/KT0006.jpg">
-            <p class="dongia">Đơn giá: <span class="gia">90,000VNĐ</span></p>
-            <a href="#"><img src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
-            </div>
-            
-            
-               <div class="sach"> 
-        	<p class="tensach"><a href="chitietsach.html">Tin học cơ bản</a></p>
-            <img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/THCB.jpg">
-            <p class="dongia">Đơn giá: <span class="gia">100,000VNĐ</span></p>
-            <a href="#"><img src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
-            </div>
-	</section>
-    
-    <aside id="right">
-    <div id="sachbannhieu">
-    	<p><b>SÁCH BÁN NHIỀU</b></p>
-<marquee direction="up" scrollamount="3" scrolldelay="100" onMouseMove="stop()" onMouseOut="start()">
-    	<p><a href="#"><img src="img/sach/KT0009.jpg">Thủ Thuật Lập Trình Visual Basic 6</a></p>
-        <p><a href="#"><img src="img/sach/TH005.jpg">Hướng Dẫn Tự Học Photoishop CS (Photoshop 6.0)</a></p>
-        <p><a href="#"><img src="img/sach/TH002.jpg">Căn Bản Về Photoshop CS Tinh Chỉnh Và Xử Lý Màu</a></p>
-        <p><a href="#"><img src="img/sach/THCB.jpg">Tin Học Cơ Bản</a></p>
-        </marquee></div>
-        <div id="lienketwebsite">
-         <p><b>LIÊN KẾT WEBSITE</b></p>
-        <select onChange="window.open(this.options[this.selectedIndex].value,'_bank')">
-       
-        <option selected>---Chọn trang liên kết---</option>
-        <option value="http://www.tdmu.edu.vn">Đại Học Thủ Dầu Một</option>
-        <option value="http://www.itee.tdmu.edu.vn">Khoa KT-CN</option>
-        </select></div>
-        <div id="thongketruycap">
-        <p><b>THỐNG KÊ TRUY CẬP</b></p>
-        <p><b>Tổng truy cập:1.145.232/s</b></p>
-        <p><b>Đang online:2.235</b></p>
-        </div>
-        </aside>
-        
-     </article>
+			<section>
+				<p>Sách mới</p>
+					<div class="sach"> 
+						<p class="tensach"><a href="chitietsach.html">Hướng Dẫn Tự Học Photoshop CS (Photoshop 6.0)</a></p>
+						<img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/TH005.jpg">
+						<p class="dongia">Đơn giá: <span class="gia">50,000VNĐ</span></p>
+						<a href="#"><img class="nutchonmua" src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
+					</div>
+					
+					<div class="sach"> 
+						<p class="tensach"><a href="chitietsach.html">Quản Lý Dự Án</a></p>
+						<img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/KT0002.jpg">
+						<p class="dongia">Đơn giá: <span class="gia">50,000VNĐ</span></p>
+						<a href="#"><img class="nutchonmua" src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
+					</div>
+					
+					<div class="sach"> 
+						<p class="tensach"><a href="chitietsach.html">Quản Trị Mạng</a></p>
+						<img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/130499.jpg">
+						<p class="dongia">Đơn giá: <span class="gia">60,000VNĐ</span></p>
+						<a href="#"><img src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
+					</div>
+					
+					<div class="sach"> 
+						<p class="tensach"><a href="chitietsach.html">Tiền Tệ - Tài Chính</a></p>
+						<img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/KT0006.jpg">
+						<p class="dongia">Đơn giá: <span class="gia">90,000VNĐ</span></p>
+						<a href="#"><img src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
+					</div>
+					
+					<div class="sach"> 
+						<p class="tensach"><a href="chitietsach.html">Tin học cơ bản</a></p>
+						<img class="hinhsach" src="file:///E|/Thiết kế web/BaitapHTML/img/Sach/THCB.jpg">
+						<p class="dongia">Đơn giá: <span class="gia">100,000VNĐ</span></p>
+						<a href="#"><img src="file:///E|/Thiết kế web/BaitapHTML/img/Chonmua.png"></a>
+					</div>
+			</section>
+			
+			<aside id="right">
+				<div id="sachbannhieu">
+					<p><b>SÁCH BÁN NHIỀU</b></p>
+						<marquee direction="up" scrollamount="3" scrolldelay="100" onMouseMove="stop()" onMouseOut="start()">
+							<p><a href="#"><img src="img/sach/KT0009.jpg">Thủ Thuật Lập Trình Visual Basic 6</a></p>
+							<p><a href="#"><img src="img/sach/TH005.jpg">Hướng Dẫn Tự Học Photoishop CS (Photoshop 6.0)</a></p>
+							<p><a href="#"><img src="img/sach/TH002.jpg">Căn Bản Về Photoshop CS Tinh Chỉnh Và Xử Lý Màu</a></p>
+							<p><a href="#"><img src="img/sach/THCB.jpg">Tin Học Cơ Bản</a></p>
+						</marquee>
+				</div>
+				<div id="lienketwebsite">
+					<p><b>LIÊN KẾT WEBSITE</b></p>
+					<select onChange="window.open(this.options[this.selectedIndex].value,'_bank')">
+						<option selected>---Chọn trang liên kết---</option>
+						<option value="http://www.tdmu.edu.vn">Đại Học Thủ Dầu Một</option>
+						<option value="http://www.itee.tdmu.edu.vn">Khoa KT-CN</option>
+					</select>
+				</div>
+				<div id="thongketruycap">
+					<p><b>THỐNG KÊ TRUY CẬP</b></p>
+					<p><b>Tổng truy cập:1.145.232/s</b></p>
+					<p><b>Đang online:2.235</b></p>
+				</div>
+			</aside>
+    	</article>
     </div>
     
     <footer >
@@ -350,6 +341,5 @@
         <p>Website được phát triển để sử dụng làm bài tập thực hành môn thiết kế và lập trình web</p>
         <p>Email: abc.thudaumotuniversity@gmail.com</p>
     </footer>
-    
 </body>
-</head>
+</html>

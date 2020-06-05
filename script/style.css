@@ -69,7 +69,7 @@ nav ul li a{
 } */
 nav div#subnav>div{
 	float:right;
-	background-color:while;
+	background-color:#FFFFFE;
 	padding-left:10px;
 	margin-top:5px;
 	margin-right:5px;
@@ -235,8 +235,8 @@ section>p{
 	padding-top:5px;
 }
 .sach{
-	width:240px;
-	height:320px;
+	width:215px;
+	height:310px;
 	background-color:#c7e5f2;
 	margin:16px;
 	border-radius:5px;
