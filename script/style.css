@@ -118,7 +118,7 @@ aside#left, aside#right, section{
 	vertical-align:top;
 }
 aside#left{
-	width:240px;
+	width:260px;
 	float:left;
 	clear:right;
 }
@@ -235,7 +235,7 @@ section>p{
 	padding-top:5px;
 }
 .sach{
-	width:215px;
+	width:210px;
 	height:310px;
 	background-color:#c7e5f2;
 	margin:16px;

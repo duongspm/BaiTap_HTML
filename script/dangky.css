@@ -123,7 +123,7 @@ aside#left, aside#right, section{
 	vertical-align:top;
 }
 aside#left{
-	width:240px;
+	width:260px;
 	float:left;
 	clear:right;
 }
@@ -308,11 +308,9 @@ h2{
 	color:while;
 	height:25px;/*khoang cach chu voi vien o duoi*/
 	padding-top:5px;/*khoang cach chu voi vien o tren*/
-
 	border-top-right-radius:5px;
 }
 section input[type=submit]{
-	
 	background-color:#206AB5;
 	color:black;
 	padding: 10px 20px;
@@ -327,20 +325,16 @@ section input[type=reset]{
   	display: inline-block;
 }
 section #ttdn{
-	
 	padding:20px 20px;
 }
 section #ttcn{
-	
 	padding:20px 20px;
 }
-section{
-	
+section{	
 	width:1000px;
 	padding:0px 8px;
 }
 section table{
-	
 	border-collapse: collapse;
 	vertical-align: bottom;
 	height:auto;
