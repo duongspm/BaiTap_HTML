@@ -352,7 +352,7 @@ aside#slide{
 	color:#FFF;
 	cursor:pointer;
 	top:102px;
-	left:-34px;
+	right:34px;
 	z-index:1000;
 }
 .slide-container{
