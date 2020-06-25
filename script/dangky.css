@@ -6,6 +6,9 @@
 	margin:0px;
 	padding:0px;
 }
+body{
+	background-color:#FFC;
+}
 header{
 	width:1200px;
 	margin:0px auto;
@@ -299,7 +302,7 @@ footer{
 }
 
 h2{
-	background-color:#206AB5;
+	background-color:#6F0;
 	border-top-left-radius:2px;/*lam tron(radius) goc tren ben trai cua duong vien*/
 	border-top-right-radius:2px;
 	text-align:center;/*chu nam giua*/
@@ -380,3 +383,16 @@ input[type=reset]:hover {
 	text-align:center;
 	border:1px solid #666;
 }
+.dangnhap{
+	background-color: #206AB5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: while;
+    height: 25px;
+    padding-top: 5px;
+	
+}
+	
